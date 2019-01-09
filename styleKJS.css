@@ -1,0 +1,56 @@
+ body {
+        background-image: url(flag.jpg);
+        font-family: 'Libre Baskerville';
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 55px;
+        color: #4c9d5a;
+        
+    }
+    
+    h2 {
+       font-size: 30px; 
+        text-align: center;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    p {
+        font-size: 25px; 
+    }
+    
+    ul,
+    p {
+        list-style-type: none;
+       position: relative;
+        left: 350px;      
+    }
+    
+    #app {
+        background-image: url(elem.jpg);
+        width: 916px;
+        height: 500px;
+        position: relative;
+        left: 250px;
+        top: 50px;   
+        
+    }
+    
+    .test {
+        position: relative;
+        top: 40px;
+    }
+    
+    
+    button {
+        width: 100px;
+        height: 35px;
+        font-size: 20px;
+        border-radius: 30px;
+        background-color: darkblue;
+        color: white;
+         position: relative;
+        left: 400px;
+    }
