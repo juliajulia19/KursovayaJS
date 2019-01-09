@@ -12,10 +12,12 @@
 <body>
 
     <h1>Test your English</h1>
-
+    
     <div id="app">
+       <button class="btn-start" v-on:click="visible=!visible" v-bind:class="{active:
+isActive}" v-on:mouseup="isActive=!isActive">START</button>
         <div v-for="(question, index) in test.questions" class="test">
-            <div v-show="index === questionIndex">
+            <div v-show="index === questionIndex" v-if="visible">
                 <h2>{{ question.number }}</h2>
 
                 <ul>
@@ -31,7 +33,7 @@
         <div v-show="questionIndex === test.questions.length">
             <h2>Test is finished</h2>
             <p>
-                Your results: {{ score() }} / {{ test.questions.length }}
+                Your result: {{ score() }} / {{ test.questions.length }} 
             </p>
         </div>
     </div>

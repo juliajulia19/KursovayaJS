@@ -147,11 +147,13 @@
             }]
  };
 
- window.onload = function () {
+ 
 
-     new Vue({
+     var test = new Vue({
          el: '#app',
          data: {
+             visible: false,
+             isActive: false,
              test: test,
              questionIndex: 0,
              userVariants: Array(test.questions.length).fill(false)
@@ -167,8 +169,10 @@
                  return this.userVariants.filter(function (val) {
                      return val
                  }).length;
-             }
+             },
+             
+             
 
          }
      });
- }
+
