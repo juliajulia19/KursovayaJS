@@ -11,13 +11,13 @@
 <body>
     <div>
         <label>How many points did you score?
-            <input type="text" onchange="hello(this.value);">
+            <input type="text" onchange="analysis(this.value);">
         </label>
     </div>
     <div id="result">
     </div>
     <script>
-        function hello(val) {
+        function analysis(val) {
             var a = parseInt(val);
             if (a === 0) {
                 document.getElementById('result').innerHTML = "<p class='advice'>Sorry, but it's an awful result. Please start with the alphabet and basic rules.<img src='ast.jpg'</p>";
