@@ -3,17 +3,18 @@
          number: "1. When Martha arrived at the station, Ruth ...",
          variants: [{
                  option: 'already left.',
-                 correct: 'false'
+                 correct: -1
                  //marked: "checked" не получается привязать через v-bind 
 
                     },
              {
                  option: 'had already left.',
-                 correct: true
+                 correct: 1
 
                     },
              {
                  option: 'has already left.',
+                 correct: -2
 
                     },
                 ]
@@ -21,127 +22,136 @@
          number: "2. If she ..... on holiday to Russia, she wouldn't have met Ivan.",
          variants: [{
                  option: "hadn't gone",
-                 correct: true
+                 correct: 1
                     },
              {
                  option: "haven't gone",
+                 correct: -1
 
                     },
              {
                  option: "didn't go",
-                 correct: false
+                 correct: -2
                     },
                 ]
             }, {
          number: "3. By the time you see this letter I ...",
          variants: [{
                  option: 'would be far away.',
-                 correct: false
+                 correct: -1
                     },
              {
-                 option: 'am going to be far away.'
+                 option: 'am going to be far away.',
+                 correct: -2
                     },
              {
                  option: 'will be far away.',
-                 correct: true
+                 correct: 1
                     },
                 ]
             }, {
          number: "4. A: What are you doing tonight at 6? B: I'm not sure, I .... to the theatre.",
          variants: [{
                  option: 'might go',
-                 correct: true
+                 correct: 1
                     },
              {
-                 option: 'will go'
+                 option: 'will go',
+                 correct: -1
                     },
              {
                  option: 'would go',
-                 correct: 'false'
+                 correct: -2
                     },
                 ]
             }, {
          number: "5. It's no use...this washing mashine. It's too old",
          variants: [{
                  option: 'to repair',
-                 correct: false
+                 correct: -1
                     },
              {
-                 option: 'repaired'
+                 option: 'repaired',
+                 correct: -2
                     },
              {
                  option: 'repairing',
-                 correct: true
+                 correct: 1
                     },
                 ]
             }, {
          number: "6. He forgot...the lights before he left",
          variants: [{
                  option: 'to turn off',
-                 correct: true
+                 correct: 1
                     },
              {
-                 option: 'turn off'
+                 option: 'turn off',
+                 correct: -1
                     },
              {
                  option: 'turning off',
-                 correct: 'false'
+                 correct: -2
                     },
                 ]
             }, {
          number: "7. Their commercial offer was too good for me to turn it...",
          variants: [{
                  option: 'away',
-                 correct: false
+                 correct: -1
                     },
              {
-                 option: 'off'
+                 option: 'off',
+                 correct: -2
                     },
              {
                  option: 'down',
-                 correct: true
+                 correct: 1
                     },
                 ]
             }, {
          number: "8. Karla didn't get the job .... having high qualifications.",
          variants: [{
                  option: 'despite',
-                 correct: true
+                 correct: 1
                     },
              {
-                 option: 'although'
+                 option: 'although',
+                 correct: -1
                     },
              {
                  option: 'even though',
-                 correct: 'false'
+                 correct: -2
                     },
                 ]
             }, {
          number: "9. If only I .... to the party instead of staying in bed.",
          variants: [{
                  option: 'did go',
-                 correct: false
+                 correct: -1
                     },
              {
                  option: 'had gone',
-                 correct: true
+                 correct: 1
                     },
              {
-                 option: 'went'
+                 option: 'went',
+                 correct: -2
                     },
                 ]
             }, {
          number: "10. The police officer ordered him...",
          variants: [{
                  option: 'not to move',
-                 correct: false
+                 correct: 1
                     },
              {
-                 option: 'not move'
+                 option: 'not move',
+                 correct: -2
                     },
              {
                  option: 'not moving',
-                 correct: true
+                 correct: -1
                     },
                 ]
             }]
@@ -167,9 +177,10 @@
 
              score: function () {
                  return this.userVariants.filter(function (val) {
-                     return val
+                     return val === 1
                  }).length;
              },
+             
              
              
 

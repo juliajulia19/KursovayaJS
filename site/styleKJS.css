@@ -1,0 +1,133 @@
+body {
+    background-color: #c2dbc7;
+    font-family: 'Libre Baskerville';
+}
+
+.main {
+    background-image: url(flag.jpg);
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 55px;
+    color: #4c9d5a;
+
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 25px;
+}
+
+ul,
+p {
+    list-style-type: none;
+    position: relative;
+    left: 350px;
+    font-weight: 600;
+}
+
+#app {
+    background-image: url(elem.jpg);
+    width: 916px;
+    height: 500px;
+    position: relative;
+    left: 250px;
+    top: 50px;
+
+}
+
+.test {
+    position: relative;
+    top: 10px;
+}
+
+
+button {
+    width: 100px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: darkblue;
+    color: white;
+    position: relative;
+    left: 400px;
+    top: 50px;
+}
+
+.btn-start {
+    background-color: #4c9d5a;
+    display: relative;
+    left: 350px;
+    top: 5px;
+    width: 200px;
+    height: 50px;
+
+}
+
+.active {
+    display: none;
+}
+
+h2 {
+    color: green;
+}
+
+ol {
+    margin: 25px 110px;
+    font-size: 15px;
+}
+
+span {
+    color: darkblue;
+}
+
+.btn-try {
+    text-decoration: none;
+    color: white;
+}
+
+.try {
+    width: 130px;
+    height: 40px;
+    display: relative;
+    left: 610px;
+}
+
+.rules {
+    margin-top: 18px;
+}
+
+.finger:hover {
+    -webkit-transform: rotate(180deg);
+}
+
+.btn-check {
+    position: relative;
+    left: 15px;
+    top: 60px;
+}
+
+label {
+    position: relative;
+    left: 17px;
+    top: 30px;
+    font-size: 16px;
+}
+
+.advice {
+    position: relative;
+    left: 15px;
+    top: 50px;
+    font-size: 18pх;
+    color: darkblue;
+}

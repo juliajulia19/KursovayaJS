@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styleKJS.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <label>How many points did you score?
+            <input type="text" onchange="hello(this.value);">
+        </label>
+    </div>
+    <div id="result">
+    </div>
+    <script>
+        function hello(val) {
+            var a = parseInt(val);
+            if (a === 0) {
+                document.getElementById('result').innerHTML = "<p class='advice'>Sorry, but it's an awful result. Please start with the alphabet and basic rules.<img src='ast.jpg'</p>";
+            } else if (a === 1) {
+                document.getElementById('result').innerHTML = '<p class="advice">You have a long way to go to improve your English. It will be a good idea to start with the vocabulary. Try to learn as more new words as you can.</p>';
+            } else if (a === 2) {
+                document.getElementById('result').innerHTML = '<p class="advice">It is a good idea to pay more attention to the basic grammar rules like the system of times. </p>';
+            } else if (a === 3) {
+                document.getElementById('result').innerHTML = '<p class="advice">To improve your level, please try to listen to music in English and watch the films of TV shows without translation, but with subtitles.</p>';
+            } else if (a === 4) {
+                document.getElementById('result').innerHTML = '<p class="advice">Not bad, but you will be able to achieve better results if you pay more attention to Present and Past Perfect and to Conditionals.</p>';
+            } else if (a === 5) {
+                document.getElementById('result').innerHTML = '<p class="advice">We are in the middle of the way now. It is a good idea to learn more phrasal verbs to make your English more natural and colloquial.</p>';
+            } else if (a === 6) {
+                document.getElementById('result').innerHTML = '<p class="advice">Try to watch more films and TV shows in English without translation and subtitles. To expand your lexicon read more books in English and write down all new words. It is also time to learn more advanced grammar. </p>';
+            } else if (a === 7) {
+                document.getElementById('result').innerHTML = '<p class="advice">It is a good result. Well done! Do not give up and you will get 10 very soon!</p>';
+            } else if (a === 8) {
+                document.getElementById('result').innerHTML = '<p class="advice">It looks like you just need to work on the details. Check our <a href="additional/new.html">"Improve your level"</a> section to find some tips.</p>';
+            } else if (a === 9) {
+                document.getElementById('result').innerHTML = '<p class="advice">Only one step from the best result. Check our <a href="additional/new.html">"Improve your level"</a> section to find some tips. </p>';
+            } else if (a === 10) {
+                document.getElementById('result').innerHTML = '<p class="advice">It is fantastic! You should be proud of yourself. <img src="mrbin.jpeg"></p>';
+            } else {
+                document.getElementById('result').innerHTML = '<p class="advice">You entered te wrong value. It should be a number from 0 to 10.</p>';
+            }
+        };
+
+    </script>
+</body>
+
+</html>
